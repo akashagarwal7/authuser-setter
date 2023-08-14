@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "AuthUser Setter",
+    "description": "Appends ?authuser=1 to all cloud.google.com URLs",
+    "version": "1.0",
+    "author": "Akash Agarwal",
+    "permissions": [
+        "webRequest",
+        "webNavigation"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}

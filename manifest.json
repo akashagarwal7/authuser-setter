@@ -1,17 +1,27 @@
 {
     "manifest_version": 3,
     "name": "AuthUser Setter",
-    "description": "Appends ?authuser=1 to all cloud.google.com URLs",
-    "version": "1.0",
+    "description": "Append the desired value of authuser query param to all cloud.google.com URLs.",
+    "version": "1.0.0",
     "author": "Akash Agarwal",
     "permissions": [
         "webRequest",
-        "webNavigation"
+        "webNavigation",
+        "storage"
     ],
     "background": {
         "service_worker": "background.js"
     },
     "host_permissions": [
         "<all_urls>"
-    ]
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "512": "user512x512Template.png"
+        }
+    },
+    "icons": {
+        "512": "user512x512Template.png"
+    }
 }
